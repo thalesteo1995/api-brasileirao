@@ -1,0 +1,16 @@
+[default]
+# veja em https://dynaconf.readthedocs.io/en/docs_223/guides/environment_variables.html
+CURRENT_ENV = "@jinja {{this.current_env | lower}}" # development or production
+HOME_DIR = "@jinja {{env.HOME}}"
+DIR_INPUT="Entrada"
+DIR_OUTPUT="Saida"
+DEBUG = true
+
+LOG_MONITOR = "monitor.log"
+BASE_URL_CBF = "https://www.cbf.com.br/futebol-brasileiro/competicoes/campeonato-brasileiro-serie-a"
+ANO_INICIAL = 2018
+ANO_FINAL = 2021
+ARQUIVO_JSON = "db.json"
+
+# setups
+S01=true
