@@ -1,0 +1,40 @@
+### Eliminando diretorios compilados do Python
+*__pycache__/*
+*/__pycache__/*
+__pycache__/*
+# ### Arquivos Temporarios
+~*.*
+*.*~
+# ### Arquivos Compilados
+*.pyc
+*.pyo
+# ### Arquivos do PyCharm
+.idea/
+.idea/*
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/metereologia_site.iml
+.idea/encodings.xml
+# ### Arquivos do Virtual Enviroment
+envs/*
+venv/*
+env/*
+.envs/*
+.venv/*
+.env/*
+# log
+# Arquivos e pastas escritos no momento da rodada
+outputs/*
+saida/*
+Saida
+logs/*
+#
+settings/config.ini
+deploy/ansible.log
+
+.env
+false
+Output
+site
