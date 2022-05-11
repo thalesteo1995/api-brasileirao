@@ -2,8 +2,8 @@
 # veja em https://dynaconf.readthedocs.io/en/docs_223/guides/environment_variables.html
 CURRENT_ENV = "@jinja {{this.current_env | lower}}" # development or production
 HOME_DIR = "@jinja {{env.HOME}}"
-DIR_INPUT="Entrada"
-DIR_OUTPUT="Saida"
+DIR_INPUT="Input"
+DIR_OUTPUT="Output"
 DEBUG = true
 
 LOG_MONITOR = "monitor.log"
