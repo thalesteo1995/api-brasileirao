@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bd_soccer"
+name = "api-brasileirao"
 version = "0.1.0"
 description = ""
 authors = ["Thales Teodoro Ampere <thales@ampereconsultoria.com.br>"]
@@ -14,6 +14,7 @@ psycopg2-binary = "^2.9.3"
 beautifulsoup4 = "^4.11.1"
 requests = "^2.27.1"
 tqdm = "^4.64.0"
+mkdocs-material = "^8.2.8"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.19.0"

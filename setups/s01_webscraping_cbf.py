@@ -57,15 +57,14 @@ def main():
             gols_contra = lst_info_clube[14]
 
             data = {
-                    nome_clube: {
-                        "brasileirao": ano,
-                        "pontos": num_pontos,
-                        "vitorias": num_vitorias,
-                        "empates": num_empates,
-                        "derrotas": num_derrotas,
-                        "gols_pro": gols_pro,
-                        "gols_contra": gols_contra,
-                }
+                "time": nome_clube,
+                "brasileirao": ano,
+                "pontos": num_pontos,
+                "vitorias": num_vitorias,
+                "empates": num_empates,
+                "derrotas": num_derrotas,
+                "gols_pro": gols_pro,
+                "gols_contra": gols_contra,
             }
 
             lst_dicts.append(data)
@@ -74,7 +73,9 @@ def main():
         pbar_convert.update(1)
     pbar_convert.close()
 
-    with open(Path(settings.DIR_OUTPUT)/settings.ARQUIVO_JSON, "w", encoding="UTF-8") as f:
+    with open(
+        Path(settings.DIR_OUTPUT) / settings.ARQUIVO_JSON, "w", encoding="UTF-8"
+    ) as f:
         json.dump(lst_dicts, f)
 
     logging.info(f"ARQUIVO {settings.ARQUIVO_JSON} CRIADO!!!")
